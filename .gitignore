@@ -1,0 +1,15 @@
+# Claude local settings
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverrideAttribute
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
