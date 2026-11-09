@@ -9,6 +9,8 @@ This studio is for planning and writing email campaigns for a small business. Us
 - **campaigns/** — email drafts, sequences, and campaign plans
 - **notes/** — research, skill notes, and miscellaneous references
 
+@brand/voice.md
+
 ## Rules
 
 - Write in plain English. No jargon, no buzzwords.
