@@ -1,40 +1,13 @@
-# Email 04 — Last Call
+Subject: The launch closes this Thursday
+Preview: We're wrapping up the launch campaign on 31 December.
 
-**Send date:** Mon 2026-12-28
-**Segment:** Non-converters (waitlist members who have not yet subscribed)
-**Status:** Draft
+Hi {{first_name}},
 
----
+We're in the last few days of the launch campaign.
 
-## Subject line options
+If you've been thinking about joining The Steep Club — or buying a gift subscription for someone — this is the time.
 
-1. Last week to join at the launch price
-2. The launch window closes on Friday
-3. One more thing before the year ends
-
-*Recommended: option 2. The deadline is specific and real — use it. Option 1 only works if a launch price exists; confirm before choosing.*
-
-## Preview text
-
-We're wrapping up the launch campaign on 31 December.
-
----
-
-## Purpose
-
-Final urgency email. The campaign closes on 31 December. This is the last push for people who have been considering but not yet acted. Honest about the deadline, not pushy. Ends with a low-pressure acknowledgement that it's okay if they don't join.
-
----
-
-## Body
-
-Hi [First name],
-
-We're in the last week of the launch campaign.
-
-If you've been thinking about joining The Steep Club — or buying a gift subscription for someone — this week is the time.
-
-We close the launch on 31 December. Subscriptions stay open after that, but [the launch offer — free tea / discounted first box] won't be.
+The launch closes on Thursday 31 December. Subscriptions stay open after that, but {{launch_offer}} won't be.
 
 Here's what you get when you join:
 
@@ -43,34 +16,43 @@ Here's what you get when you join:
 - A 90-second quiz before your first box so we get it right for you
 - The ability to pause, skip, or cancel any time
 
-**[Join before 31 December]**
+[Join before 31 December](https://kettlebird.example/steep-club)
 
 If you've decided it's not for you right now, no problem. The unsubscribe link is below, and the door stays open if you change your mind later.
 
-Talk soon,
+Talk soon.
 
 [Name]
 The Steep Club
 
----
-
-## Primary CTA
-
-**Button text:** Join before 31 December
-**Destination:** Subscription page
-
-*Note: if there is no launch offer, replace the bracketed line with: "Subscriptions stay open, but we'll be closing this sequence — so this is the last you'll hear from us on this campaign." Keeps the email honest without manufacturing urgency.*
+You're getting this because you joined the Kettlebird Tea waitlist.
+Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 ---
 
-## Timing
+## Production notes
 
-Send Monday 2026-12-28, 8–9 am. Gives four days before the 31 December deadline.
+**Send date:** Mon 2026-12-28, 8–9 am
+**Segment:** Non-converters (waitlist members who have not yet subscribed)
+**Status:** Draft
 
-## Condition notes
+### Subject line alternatives
 
-- Sends only to people who have not yet subscribed — do not send to existing members
-- If a gift deadline email went out on 2026-12-23 (to gift buyers specifically), suppress gift buyers here if they've already received that email within 5 days — avoid back-to-back sends to the same people
+1. The launch closes this Thursday *(recommended)*
+2. One more thing before the year ends
+3. Last week to join at the launch price *(only use if a launch price exists)*
+
+### Launch offer placeholder
+
+Replace `{{launch_offer}}` with a short description of the offer, e.g. "the discounted first box" or "the free welcome tea."
+
+If there is no launch offer, replace the full sentence with:
+
+> The launch closes on Thursday 31 December. After that, subscriptions stay open — but this is the last email we'll send as part of this campaign.
+
+### Conditions
+
+- Sends only to people who have not yet subscribed
+- Suppress gift buyers who already received the gift deadline email (2026-12-23) — avoid two sends within five days to the same people
 - Exit condition: recipient subscribes → remove from list, enroll in welcome sequence
 - After this send, anyone who hasn't subscribed by 2026-12-31 exits the launch sequence entirely
-- A short "thank you / door stays open" email (all segments, 2026-12-31) is planned separately — that is out of scope for this file

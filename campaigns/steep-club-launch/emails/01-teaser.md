@@ -1,34 +1,7 @@
-# Email 01 — Teaser
+Subject: Something's arriving on Monday
+Preview: We've been quiet for a while. That's about to change.
 
-**Send date:** Thu 2026-12-03
-**Segment:** All waitlist members
-**Status:** Draft
-
----
-
-## Subject line options
-
-1. Something's arriving on Monday
-2. You were first. Here's why that matters.
-3. Watch your inbox this Monday
-
-*Recommended: option 1. Straightforward, creates a specific hook without overselling.*
-
-## Preview text
-
-We've been quiet for a while. That's about to change.
-
----
-
-## Purpose
-
-Re-warm the list three days before launch. No hard sell — just a brief, human "something is happening, and you're first to know." Gets the sender name back in people's inboxes before the main email lands.
-
----
-
-## Body
-
-Hi [First name],
+Hi {{first_name}},
 
 You signed up to hear when The Steep Club opened.
 
@@ -38,28 +11,36 @@ We'll send you everything — what's in the first box, how it works, what it cos
 
 One thing to know before then: we kept this list small. You're on it. That means you get access before anyone else.
 
+[See what's coming](https://kettlebird.example/steep-club)
+
 Talk soon.
 
 [Name]
 The Steep Club
 
----
-
-## Primary CTA
-
-None. The only action is to expect Monday's email.
-
-*Optional soft CTA if desired: "Reply and tell us — are you joining for yourself, as a gift, or both?" — good for data gathering and reply signals that improve deliverability.*
+You're getting this because you joined the Kettlebird Tea waitlist.
+Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 ---
 
-## Timing
+## Production notes
 
-Send Thursday 2026-12-03, mid-morning (9–11 am local time).
+**Send date:** Thu 2026-12-03, 9–11 am
+**Segment:** All waitlist members (~2,000)
+**Status:** Draft
 
-## Condition notes
+### Subject line alternatives
 
-- Sends to the full waitlist of ~2,000
-- No segmentation needed here
-- Exit condition: none — this is a one-shot broadcast
+1. Something's arriving on Monday *(recommended)*
+2. You were first. Here's why that matters.
+3. Watch your inbox this Monday
+
+### Purpose
+
+Re-warm the list three days before launch. No hard sell — gets the sender name back in inboxes before the main email lands on Monday.
+
+### Conditions
+
+- Sends to the full waitlist
+- No segmentation needed
 - Suppression: anyone who has already unsubscribed
