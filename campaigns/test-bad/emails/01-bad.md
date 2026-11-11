@@ -7,7 +7,7 @@ We wanted to reach out about an exciting opportunity to leverage our state-of-th
 
 Our AI-powered solution will transform your business and unlock unprecedented revenue. Restaurants using our system have seen guaranteed 40% revenue increases.
 
-Detox your restaurant operations — cleanse your old systems and purify your workflow with MezbanPOS.
+Switching to MezbanPOS is straightforward — you can be up and running in a day.
 
 This is your last chance to sign up before prices go up forever.
 

@@ -1,18 +1,68 @@
 {
+  "folder": "campaigns/test-bad",
   "findings": [
     {
-      "file": "campaigns/mezbanpos-launch/emails/03-early-pricing-closes.md",
-      "line": 29,
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 1,
       "severity": "high",
-      "problem": "\"trying it at the launch rate costs you nothing if it doesn't work out\" implies a free trial or money-back guarantee. The email only establishes no annual contract / cancel-anytime terms, not zero monetary cost. This is a misleading claim and violates the brand's Honest value.",
-      "fix": "Replace with: \"…and there's no annual contract if you decide it's not right for your restaurant.\""
+      "problem": "Subject line is 63 characters — exceeds the 50-character limit.",
+      "fix": "Shorten to 50 chars or fewer, e.g. \"Introducing MezbanPOS — now live\""
     },
     {
-      "file": "campaigns/mezbanpos-launch/groups/pos-explorers/emails/03-early-pricing-closes.md",
-      "line": 29,
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 1,
+      "severity": "medium",
+      "problem": "Subject uses banned words: \"revolutionise\" and \"AI-powered\" (as a standalone selling point).",
+      "fix": "Remove both. Lead with a concrete benefit instead, e.g. \"Run your front-of-house with less effort\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 2,
+      "severity": "medium",
+      "problem": "Preview uses three banned phrases: \"Transform\", \"cutting-edge\", and \"next-generation\".",
+      "fix": "Replace with plain language, e.g. \"See how MezbanPOS helps you manage orders, tables, and staff in one place\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 4,
       "severity": "high",
-      "problem": "Same misleading claim as the base email: \"trying it at the launch rate costs you nothing if it doesn't work out\" implies a free trial or money-back guarantee that isn't offered.",
-      "fix": "Replace with: \"…and there's no annual contract if you decide it's not right for your restaurant.\""
+      "problem": "Greeting is \"Hi there,\" — missing the required {{first_name}} merge tag.",
+      "fix": "Change to \"Hi {{first_name}},\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 6,
+      "severity": "medium",
+      "problem": "Uses two banned words: \"leverage\" and \"state-of-the-art\", plus passive voice (\"exciting opportunity to leverage\").",
+      "fix": "Rewrite plainly, e.g. \"We wanted to tell you about MezbanPOS — a POS built specifically for restaurants.\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 8,
+      "severity": "high",
+      "problem": "\"Our AI-powered solution will transform your business\" is an explicitly forbidden claim. \"unlock unprecedented revenue\" uses a banned word. \"guaranteed 40% revenue increases\" promises a specific guaranteed outcome — also forbidden.",
+      "fix": "Remove all three claims. If you have real customer results, cite them honestly without guarantees. Remove any mention of AI as the selling point."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 12,
+      "severity": "medium",
+      "problem": "NEW: \"This is your last chance to sign up before prices go up forever.\" uses false scarcity and dishonest urgency, contradicting the brand's core \"Honest\" voice principle.",
+      "fix": "Remove or replace with an honest value statement, e.g. \"We'd love to have you on board — here's how to get started.\""
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 16,
+      "severity": "high",
+      "problem": "A second link `[See results](https://mezbanpos.com/case-studies/)` appears after the main CTA. The rule requires exactly one link pointing to https://mezbanpos.com/. This line breaks both constraints.",
+      "fix": "Delete line 16 entirely."
+    },
+    {
+      "file": "campaigns/test-bad/emails/01-bad.md",
+      "line": 18,
+      "severity": "medium",
+      "problem": "\"Best regards\" is a formal closing explicitly listed as forbidden.",
+      "fix": "Replace with a warm, direct sign-off from the guide, e.g. \"Talk soon,\" or \"Happy to dig into this with you.\""
     }
   ]
 }

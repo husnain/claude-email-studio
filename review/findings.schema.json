@@ -1,8 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": ["findings"],
+  "required": ["folder", "findings"],
   "properties": {
+    "folder": {
+      "type": "string"
+    },
     "findings": {
       "type": "array",
       "items": {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { execFileSync } from "child_process";
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -16,9 +16,28 @@ if (!folder) {
 const schemaPath = resolve(projectRoot, "review/findings.schema.json");
 const schema = readFileSync(schemaPath, "utf8");
 
+const outPath = resolve(projectRoot, "review/findings.json");
+
+// Load prior findings for the same folder so the reviewer doesn't repeat fixed problems
+let priorBlock = "";
+if (existsSync(outPath)) {
+  try {
+    const prior = JSON.parse(readFileSync(outPath, "utf8"));
+    if (prior.folder === folder && Array.isArray(prior.findings) && prior.findings.length > 0) {
+      priorBlock =
+        "\n\nThese are findings from the last review:\n" +
+        JSON.stringify(prior.findings, null, 2) +
+        "\nReport only problems that are new or still not fixed. Don't repeat ones that have been fixed.";
+    }
+  } catch {
+    // malformed or missing — ignore and do a fresh review
+  }
+}
+
 const prompt =
   `Review every email in ${folder} against brand/voice.md and .claude/rules/emails.md. ` +
-  `Report only real problems.`;
+  `Report only real problems.` +
+  priorBlock;
 
 const args = [
   "-p", prompt,
@@ -59,8 +78,7 @@ if (Array.isArray(parsed)) {
 
 const structured = result?.structured_output ?? result;
 
-const outPath = resolve(projectRoot, "review/findings.json");
-writeFileSync(outPath, JSON.stringify(structured, null, 2));
+writeFileSync(outPath, JSON.stringify({ folder, ...structured }, null, 2));
 
 const findings = structured?.findings ?? [];
 const highs = findings.filter((f) => f.severity === "high");
