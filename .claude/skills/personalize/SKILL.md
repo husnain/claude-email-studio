@@ -1,6 +1,6 @@
 ---
 name: personalize
-description: Write a version of each campaign email for every lead group in leads/leads.csv. Use when a campaign's emails are final and you want one copy per group.
+description: Write a version of each MezbanPOS campaign email for every lead group in leads/leads.csv (pos-explorers, restaurant-owners, managers). Use when a campaign's emails are final and you want one copy per group.
 argument-hint: "[campaign folder]"
 context: fork
 allowed-tools: Read, Glob, Grep, Write
@@ -23,9 +23,9 @@ Read `leads/leads.csv`. The `group` column contains the group names. Treat these
 
 | Group | Who they are |
 |---|---|
-| `tea-curious` | New to specialty tea. They signed up out of curiosity. Lead with discovery — the idea of a first proper cup. |
-| `gift-buyers` | Buying for someone else. Lead with how this works as a gift — something the recipient will actually use and appreciate. |
-| `daily-drinkers` | Already drink tea every day. Skip the basics. Lead with upgrade — better quality, more variety, the next level. |
+| `pos-explorers` | Evaluating POS options, not yet decided. Lead with what makes MezbanPOS easy to try — low commitment, no lock-in. |
+| `restaurant-owners` | Own the business and control the buying decision. Lead with business impact — cost, control, and what it frees them up to do. |
+| `managers` | Run day-to-day operations but don't own the buying decision. Lead with how MezbanPOS makes their shift easier and their team faster. |
 
 ## Step 3 — Find the source emails
 
@@ -45,16 +45,16 @@ The Write tool creates parent directories automatically.
 - `Subject:` line
 - `Preview:` line
 - `Hi {{first_name}},` greeting
-- The main CTA link — both the text and the URL `https://kettlebird.example/steep-club`
+- The main CTA link — both the text and the URL `https://mezbanpos.com/`
 - The sign-off line
 - Both footer lines:
-  - `You're getting this because you joined the Kettlebird Tea waitlist.`
-  - `Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}`
+  - `You're getting this because you joined the MezbanPOS waiting list.`
+  - `MezbanPOS, {{company_address}} · Unsubscribe: {{unsubscribe_url}}`
 - The `---` separator and everything below it (Production notes)
 
 **Change only these two things:**
 1. **Opening line** — the first sentence of the body after `Hi {{first_name}},`. Replace it with one sentence that speaks directly to why that group is on the list.
-2. **One example** — if the body contains a specific example (a tea name, a scenario, a use case), swap it for one that fits the group better. If there is no clear example to swap, leave the rest of the body unchanged.
+2. **One example** — if the body contains a specific example (a restaurant scenario, a workflow pain point, a feature use case), swap it for one that fits the group better. For `pos-explorers` lean toward comparison and evaluation scenarios; for `restaurant-owners` lean toward cost, control, and business outcomes; for `managers` lean toward shift speed, table turns, and staff ease. If there is no clear example to swap, leave the rest of the body unchanged.
 
 Write in the brand voice: plain, direct, warm. No jargon. Short sentences.
 
