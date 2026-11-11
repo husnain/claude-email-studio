@@ -1,6 +1,8 @@
-# Leads folder rules
+# Leads Folder Rules
 
-- Everyone in this folder is a made-up practice person. Do not add real people or real email addresses.
-- Every row in a CSV must have a non-empty `consent` value.
-- Never change any `@example.com` address. That domain is reserved and can never receive mail.
-- Ask before deleting any file or row.
+These are made-up practice people for testing and development only.
+
+- Never add real people or real email addresses to any file in this folder.
+- Every row in a CSV must have a `consent` value.
+- Never change any `@example.com` address — that domain is reserved and cannot receive mail.
+- Do not use this data to send, draft, or simulate email to real recipients.
