@@ -15,4 +15,5 @@ This studio is for planning and writing email campaigns for a small business. Us
 
 - Write in plain English. No jargon, no buzzwords.
 - Never send email to real people, and never generate real email addresses to send to.
+- Sending through Resend is allowed only to addresses ending in `@resend.dev` or to `husnain2info@gmail.com`. A guard will enforce this — do not bypass it.
 - Ask before deleting any file or folder.
