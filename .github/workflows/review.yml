@@ -1,0 +1,43 @@
+name: Brand review
+
+on:
+  pull_request:
+    paths:
+      - "campaigns/**/emails/*.md"
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Detect changed campaign folders
+        id: folders
+        run: |
+          folders=$(git diff --name-only origin/${{ github.base_ref }}...HEAD \
+            | grep '^campaigns/.*/emails/.*\.md$' \
+            | sed 's|/emails/.*||' \
+            | sort -u \
+            | tr '\n' ' ')
+          echo "folders=$folders" >> "$GITHUB_OUTPUT"
+
+      - name: Run brand review
+        if: steps.folders.outputs.folders != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          overall=0
+          for folder in ${{ steps.folders.outputs.folders }}; do
+            node scripts/review.mjs "$folder" || overall=1
+          done
+          exit $overall
