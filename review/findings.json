@@ -1,0 +1,18 @@
+{
+  "findings": [
+    {
+      "file": "campaigns/mezbanpos-launch/emails/03-early-pricing-closes.md",
+      "line": 29,
+      "severity": "high",
+      "problem": "\"trying it at the launch rate costs you nothing if it doesn't work out\" implies a free trial or money-back guarantee. The email only establishes no annual contract / cancel-anytime terms, not zero monetary cost. This is a misleading claim and violates the brand's Honest value.",
+      "fix": "Replace with: \"…and there's no annual contract if you decide it's not right for your restaurant.\""
+    },
+    {
+      "file": "campaigns/mezbanpos-launch/groups/pos-explorers/emails/03-early-pricing-closes.md",
+      "line": 29,
+      "severity": "high",
+      "problem": "Same misleading claim as the base email: \"trying it at the launch rate costs you nothing if it doesn't work out\" implies a free trial or money-back guarantee that isn't offered.",
+      "fix": "Replace with: \"…and there's no annual contract if you decide it's not right for your restaurant.\""
+    }
+  ]
+}
