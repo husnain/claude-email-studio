@@ -34,7 +34,7 @@ Every email must end with a warm, direct sign-off from the brand voice guide —
 
 Immediately after the sign-off, add this two-line footer as plain text — not inside a code block and not formatted as Markdown:
 
-You're getting this because you joined the MezbaPOS waiting list.
-Kettlebird Tea, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
+You're getting this because you joined the MezbanPOS waiting list.
+MezbanPOS, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 Both lines must appear exactly as shown, using the merge tags `{{company_address}}` and `{{unsubscribe_url}}`.

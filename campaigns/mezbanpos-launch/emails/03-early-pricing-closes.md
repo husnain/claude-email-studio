@@ -1,3 +1,6 @@
+Subject: Early pricing closes 31 Dec
+Preview: After 31 December, the waitlist price is gone. Here's what it includes.
+
 # Email 03: Early Pricing Closes 31 December
 
 **Send date:** Wednesday 23 December 2026  
@@ -21,7 +24,7 @@ After 31 December, the waitlist price is gone. Here's what it includes.
 
 ## Body
 
-Hi [First Name],
+Hi {{first_name}},
 
 Quick note: the early pricing for waitlist members closes on **31 December**.
 
@@ -35,17 +38,20 @@ Here's what the launch pricing includes:
 
 **No annual contract. Cancel any time.**
 
-If MezbanPOS isn't working for your restaurant after a few weeks, you can walk away with no penalty and no awkward cancellation call. We built it this way because we're confident it'll work — and because we don't think locking people into contracts is a good way to run a business.
+If MezbanPOS isn't working for your restaurant after a few weeks, you can walk away with no penalty and no awkward cancellation call. We built it this way because we stand behind it — and because we don't think locking people into contracts is a good way to run a business.
 
 You have nine days. The deadline is real.
 
-**[Lock in your rate →]**
+[Lock in your rate →](https://mezbanpos.com/)
 
 If something is still holding you back, reply and tell me what it is. I'd rather answer your question now than have you miss the window.
 
 Talk soon,  
 [Name]  
 MezbanPOS
+
+You're getting this because you joined the MezbanPOS waiting list.
+MezbanPOS, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 ---
 

@@ -1,3 +1,6 @@
+Subject: Today is the last day for early pricing
+Preview: After midnight, the waitlist rate is gone for good. Here's the short version.
+
 # Email 04: Last Day — Pricing Closes Tonight
 
 **Send date:** Wednesday 31 December 2026  
@@ -21,11 +24,11 @@ After midnight, the waitlist rate is gone for good. Here's the short version.
 
 ## Body
 
-Hi [First Name],
+Hi {{first_name}},
 
 Today is the last day to subscribe at the launch price.
 
-At midnight tonight, the waitlist rate closes and we move to standard pricing. This isn't a deadline we'll extend — the doors to the public open tomorrow.
+At midnight tonight, the waitlist rate closes and we move to standard pricing. This isn't a soft deadline — the doors to the public open tomorrow.
 
 If you've been thinking about it, now is the time.
 
@@ -38,13 +41,16 @@ If you've been thinking about it, now is the time.
 
 If the last few weeks haven't answered your questions, reply right now. I'll get back to you today.
 
-**[Subscribe now →]**
+[Subscribe now →](https://mezbanpos.com/)
 
 Whatever you decide, thank you for being on the waitlist. We built this for people who take running their restaurant seriously, and you've been paying attention since the beginning.
 
 Talk soon,  
 [Name]  
 MezbanPOS
+
+You're getting this because you joined the MezbanPOS waiting list.
+MezbanPOS, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 ---
 

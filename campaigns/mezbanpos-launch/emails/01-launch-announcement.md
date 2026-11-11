@@ -1,3 +1,6 @@
+Subject: You're first. MezbanPOS is live.
+Preview: Early access starts now. Here's what that means for you.
+
 # Email 01: Launch Announcement
 
 **Send date:** Monday 7 December 2026  
@@ -21,7 +24,7 @@ Early access starts now. Here's what that means for you.
 
 ## Body
 
-Hi [First Name],
+Hi {{first_name}},
 
 You joined the waitlist a while back. So you hear about this before anyone else: **MezbanPOS is live today.**
 
@@ -38,13 +41,16 @@ This isn't a beta. It's the full product, ready to run your floor.
 
 The launch price we've set for waitlist members closes on 31 December. After that, we open to the public at the standard rate.
 
-**[Start your subscription →]**
+[Start your subscription →](https://mezbanpos.com/)
 
 If you have questions before you sign up, just reply to this email. I read every one.
 
 Talk soon,  
 [Name]  
 MezbanPOS
+
+You're getting this because you joined the MezbanPOS waiting list.
+MezbanPOS, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 ---
 

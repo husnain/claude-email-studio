@@ -1,3 +1,6 @@
+Subject: One thing most POS systems get wrong
+Preview: Most systems are built for the sales demo. Not for a Friday dinner rush.
+
 # Email 02: What It Actually Does
 
 **Send date:** Thursday 10 December 2026  
@@ -21,7 +24,7 @@ Most systems are built for the sales demo. Not for a Friday dinner rush.
 
 ## Body
 
-Hi [First Name],
+Hi {{first_name}},
 
 Most POS systems look great in a demo. They're less impressive when your head server calls in sick on a Friday night and three tables are waiting to split their check.
 
@@ -39,13 +42,16 @@ The result is a system your team can learn in a shift, not a week. Setup takes u
 
 If you haven't subscribed yet, early pricing is still open until 31 December.
 
-**[See how MezbanPOS works →]**
+[See how MezbanPOS works →](https://mezbanpos.com/)
 
 Happy to dig into any of this with you — just reply.
 
 Talk soon,  
 [Name]  
 MezbanPOS
+
+You're getting this because you joined the MezbanPOS waiting list.
+MezbanPOS, {{company_address}} · Unsubscribe: {{unsubscribe_url}}
 
 ---
 
