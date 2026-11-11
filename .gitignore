@@ -1,6 +1,10 @@
 # Claude local settings
 .claude/settings.local.json
 
+# Environment variables
+.env
+.env.*
+
 # macOS
 .DS_Store
 .AppleDouble
