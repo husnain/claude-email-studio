@@ -1,4 +1,4 @@
-Subject: You're first. MezbanPOS is live.
+Subject: One less thing to fight before the rush
 Preview: Early access starts now. Here's what that means for you.
 
 # Email 01: Launch Announcement
@@ -12,9 +12,9 @@ Preview: Early access starts now. Here's what that means for you.
 
 ## Subject Lines
 
-1. You're first. MezbanPOS is live. *(recommended — mirrors the campaign name, front-loaded)*
-2. MezbanPOS is live — you're in
-3. Your waitlist spot just paid off
+1. One less thing to fight before the rush *(chosen — Angle A: Calm Daily Ritual)*
+2. Open, run your floor, close. That's it.
+3. Morning setup. No IT call needed.
 
 ## Preview Text
 
